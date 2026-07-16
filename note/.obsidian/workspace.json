@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "8de916a9f901be1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "73c0dd7f014c7b68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d1047cb8971bd22",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a0e5e1f14a247645",
+    "type": "split",
+    "children": [
+      {
+        "id": "9866abca77850b90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57151e627c9d6761",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "51f5522d56523103",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "7d6440c64b0bb42f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "357fd16396a412aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "eafeb697aef2f42e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03b1a90c2d3c5e39",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "d7f409c0aa4f0d6b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "11fdce8b3033d46e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a6177319f7425944",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "4d1cb47d46634366",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "9d1047cb8971bd22",
+  "lastOpenFiles": [
+    "Arduino.md",
+    "Note.md",
+    "Fusion.md",
+    "Excalidraw/Scripts/Downloaded/Auto Layout.md",
+    "others.md",
+    "math.md",
+    "Excalidraw/Arduino/Day_2_Arduino.excalidraw.md",
+    "Day_2_Arduino.excalidraw.md",
+    "Excalidraw/Arduino/Day_1_Arduino.excalidraw.md",
+    "Excalidraw/others",
+    "Excalidraw/math",
+    "Excalidraw/Fusion 360",
+    "Excalidraw/Arduino",
+    "Excalidraw/Scripts/未命名",
+    "Excalidraw/math/Day_2_线代.excalidraw.md",
+    "Excalidraw/Fusion 360/Day_5_fusion.excalidraw.md",
+    "notePictures/Pasted Image 20260716165700_527.png",
+    "notePictures",
+    "Day_5_fusion.excalidraw",
+    "Excalidraw/others/Day_4_shoppinglist.excalidraw.md",
+    "notePictures/Pasted Image 20260716170322_598.jpg",
+    "notePictures/Pasted Image 20260716170322_589.jpg",
+    "notePictures/Pasted Image 20260716170322_580.jpg",
+    "notePictures/Pasted Image 20260716170322_571.jpg",
+    "notePictures/Pasted Image 20260716170322_560.jpg",
+    "notePictures/Pasted Image 20260716170322_550.jpg",
+    "notePictures/Pasted Image 20260716170322_540.jpg",
+    "notePictures/Pasted Image 20260716170322_532.jpg",
+    "notePictures/Pasted Image 20260716170322_523.jpg",
+    "Day_4_shoppinglist.excalidraw",
+    "Day_4_elctronic_base.excalidraw",
+    "Excalidraw/others/Day_4_elctronic_base.excalidraw.md",
+    "Day_3_线代.excalidraw",
+    "Excalidraw/math/Day_3_线代.excalidraw.md",
+    "Excalidraw/Scripts/Downloaded/Mindmap format.md",
+    "Excalidraw/Scripts/Downloaded/Mindmap connector.md",
+    "Excalidraw/Scripts/Downloaded/Add Link to Existing File and Open.md",
+    "Excalidraw/Arduino/Day_6_Arduino.excalidraw.md",
+    "Excalidraw/Arduino/Day_4_Arduino.excalidraw.md",
+    "Excalidraw/Arduino/Day_3_Arduino.excalidraw.md",
+    "Day_1_Arduino.md"
+  ]
+}
