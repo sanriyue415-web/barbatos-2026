@@ -11,30 +11,12 @@
             "id": "116fe3eb3654d797",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Otto.setTrims Otto.saveTrimsOnEEPROMT.md",
-                "mode": "source",
-                "source": false
+                "file": "note/Excalidraw/math/Day_7_Robot_math.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Otto.setTrims Otto.saveTrimsOnEEPROMT"
-            }
-          }
-        ]
-      },
-      {
-        "id": "1aa0d323e65cf70b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8c4aef639ec60165",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "icon": "excalidraw-icon",
+              "title": "Day_7_Robot_math.excalidraw"
             }
           }
         ]
@@ -57,7 +39,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -193,18 +175,58 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "8c4aef639ec60165",
+  "active": "1721cb7281110f07",
   "lastOpenFiles": [
-    "未命名 1.base",
-    "未命名.base",
-    "Otto库.md",
-    "Otto.walk.md",
+    "note/notePictures/93a9b8b136b7796d53115fa4b0ed5ac9.jpg",
+    "note/notePictures/1120c67612ed006516290acc5e0e480c.jpg",
+    "note/Excalidraw/math/Day_3_线代.excalidraw.md",
+    "note/Excalidraw/math/Day_7_Robot_math.excalidraw.md",
+    "Excalidraw",
+    "note/Excalidraw/math/Day_2_线代.excalidraw.md",
+    "note/Excalidraw/Fusion 360/Day_7_fusion.excalidraw.md",
+    "note/notePictures/Pasted Image 20260717201232_496.png",
+    "note/notePictures/Pasted Image 20260717190450_557.png",
+    "note/Excalidraw/Fusion 360/Day_5_fusion.excalidraw.md",
+    "note/Excalidraw/Arduino/Day_6_Arduino.excalidraw.md",
+    "note/Arduino.md",
+    "Arduino/Otto.init.md",
+    "Arduino/Arduino.md",
+    "Arduino/Otto.setTrims Otto.saveTrimsOnEEPROMT.md",
+    "Arduino/Otto库.md",
+    "Arduino/Otto.walk.md",
+    "note/math.md",
+    "note/Note.md",
+    "note/others.md",
     "Otto.setTrims Otto.saveTrimsOnEEPROMT.md",
-    "Arduino.md",
-    "Otto.home.md",
-    "Otto.init.md"
+    "note/Excalidraw/Scripts/Downloaded/Mindmap format.md",
+    "note/Excalidraw/Scripts/Downloaded/Mindmap connector.svg",
+    "note/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
+    "note/Excalidraw/Scripts/Downloaded/Mindmap connector.md",
+    "note/Excalidraw/Scripts/Downloaded/Auto Layout.svg",
+    "note/Excalidraw/Scripts/Downloaded/Auto Layout.md",
+    "note/Excalidraw/Scripts/Downloaded/Add Link to Existing File and Open.svg",
+    "note/Excalidraw/Scripts/Downloaded/Add Link to Existing File and Open.md",
+    "note/Excalidraw/others/Day_4_elctronic_base.excalidraw.md",
+    "note/Excalidraw/Scripts/Downloaded",
+    "note/Excalidraw/others/Day_4_shoppinglist.excalidraw.md",
+    "note/Excalidraw/Arduino/Day_4_Arduino.excalidraw.md",
+    "note/Excalidraw/Arduino/Day_3_Arduino.excalidraw.md",
+    "note/Excalidraw/Arduino/Day_2_Arduino.excalidraw.md",
+    "note/notePictures/Pasted Image 20260716170322_598.jpg",
+    "note/notePictures/Pasted Image 20260716170322_589.jpg",
+    "note/notePictures/Pasted Image 20260716170322_580.jpg",
+    "note/Excalidraw/Scripts",
+    "note/Excalidraw/others",
+    "note/Excalidraw/math",
+    "note/Excalidraw/Fusion 360",
+    "note/Excalidraw/Arduino",
+    "note/notePictures",
+    "note/Excalidraw",
+    "note"
   ]
 }

@@ -11,10 +11,14 @@
             "id": "9d1047cb8971bd22",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "Arduino.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Arduino"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Excalidraw/Arduino/Day_3_Arduino.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Day_3_Arduino.excalidraw 的反向链接列表"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Excalidraw/Arduino/Day_3_Arduino.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "Day_3_Arduino.excalidraw 的出链列表"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Excalidraw/Arduino/Day_3_Arduino.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Day_3_Arduino.excalidraw 的大纲"
             }
           }
         ]
@@ -180,15 +187,16 @@
   },
   "active": "9d1047cb8971bd22",
   "lastOpenFiles": [
+    "Excalidraw/Arduino/Day_3_Arduino.excalidraw.md",
+    "Excalidraw/Arduino/Day_2_Arduino.excalidraw.md",
+    "Excalidraw/Arduino/Day_1_Arduino.excalidraw.md",
     "Arduino.md",
     "Note.md",
     "Fusion.md",
     "Excalidraw/Scripts/Downloaded/Auto Layout.md",
     "others.md",
     "math.md",
-    "Excalidraw/Arduino/Day_2_Arduino.excalidraw.md",
     "Day_2_Arduino.excalidraw.md",
-    "Excalidraw/Arduino/Day_1_Arduino.excalidraw.md",
     "Excalidraw/others",
     "Excalidraw/math",
     "Excalidraw/Fusion 360",
@@ -219,7 +227,6 @@
     "Excalidraw/Scripts/Downloaded/Add Link to Existing File and Open.md",
     "Excalidraw/Arduino/Day_6_Arduino.excalidraw.md",
     "Excalidraw/Arduino/Day_4_Arduino.excalidraw.md",
-    "Excalidraw/Arduino/Day_3_Arduino.excalidraw.md",
     "Day_1_Arduino.md"
   ]
 }

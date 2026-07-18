@@ -1,4 +1,4 @@
-[[Arduino]]
+[[note/Arduino]]
 [[math]]
 [[others]]
 [[Fusion]]
