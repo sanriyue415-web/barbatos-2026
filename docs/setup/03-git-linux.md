@@ -4,7 +4,7 @@
  - git config --global user.name / user.email
  - git config --global core.editer "nano" git打开编辑器时用nano
  - git config --global init.defaulBranch main
- - git的账户必须和GitHub一直，否则commit不关联，即commit后没用
+ - git的账户必须和GitHub一致，否则commit不关联，即commit后没用
 ## SSH key
  - SSH keygen -t ed25519 -C "邮箱" 生成密钥对（Ed25519为现代标准）
  - 私钥： ~/.ssh/id_ed25519 绝对不可以外传
