@@ -4,11 +4,11 @@
 DistanceSensor::DistanceSensor(std::string n,double d):name_(n),distance_(d){}
 DistanceSensor::~DistanceSensor()
 {
-	std::cout<<name_ <<"is shutting down \n";
+	std::cout<<name_ <<" is shutting down \n";
 }
 double DistanceSensor::read()
 {
-	double noise = ((double)rand() / RAND_MAX - 0.5);
+	double noise = ((rand()% 11) - 5);
 	return distance_ + noise;
 }
 std::string DistanceSensor::name()const
