@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(split)
+set(CMAKE CXX_STANDARD 17)
+SET(CMAKE CXX_STANDARD ON)
+add_subdirectory(src)
+add_subdirectory(app)
