@@ -19,3 +19,20 @@
  A3：DDS 是 OMG 定义的通信中间件标准（类似 USB、HTTP 那种"标准协议"），ROS2 用它做节点自动发现和消息传输。DDS ≠ROS2，是 ROS2 的一个组件。让节点自动发现彼此，不需要 ROS1 那种 roscore master
  Q4.source /opt/ros/jazzy/setup.bash 做了什么？ 不 source 直接 ros2 ... 会怎样？
  A4：临时加载 ROS 2 Jazzy 的环境变量、路径、补全脚本，可在终端中自己配置文件让他自己启动，但是其他环境就需要source /opt/ros/jazzy/setup.bash
+# W4 D2 C++ talker + colcon
+### 完成
+  - 第一个 ROS2 C++ 包 barbatos_demo 跑通 pub+sub,温度 25→31 递增
+  - 理解 colcon workspace 结构 (src/build/install/log)
+  ### 学会的能力
+  - rclcpp::Node / create_publisher / create_subscription API
+  - 单线程 executor 模型(进程内 callback 串行)
+  - colcon build + ament_cmake 基础
+  ### 踩的坑
+  - std::string 拼接顺序(const char* 在左边是错的)
+  - 成员变量拼写(typo 导致 "未声明")
+  - count_ 递增丢失
+  ### 自检问题
+  - 5 题都答了- Q4: 节点自动有/parameter_events /rosout + 7 个参数服务
+  - Q5: pub/sub 不同进程独立,每进程内 callback 单线程
+  ### 最大问题
+  - 拼写错误比想象中多——rclcpp 类型名太长手抄出错
