@@ -6,6 +6,11 @@
   <description>Barbatos 第一个 ROS2 C++ demo</description>
   <maintainer email="sanriyue415@gmail.com">sanriyue</maintainer>
   <license>Apache-2.0</license>
+  
+   <depend>rclcpp</depend>
+   <depend>std_msgs</depend>
+   <member_of_group>rosidl_interface_packages</member_of_group>
+   <depend>rosidl_default_generators</depend>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
@@ -14,7 +19,5 @@
 
   <export>
     <build_type>ament_cmake</build_type>
-    <depend>rclcpp</depend>
-    <depend>std_msgs</depend>
   </export>
 </package>

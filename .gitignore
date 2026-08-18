@@ -43,9 +43,9 @@
 build/
 Build/
 build-*/
-ros2_ws/build/
-ros2_ws/install/
-ros2_ws/log/
+build/
+install/
+log/
 # CMake generated files
 CMakeFiles/
 CMakeCache.txt

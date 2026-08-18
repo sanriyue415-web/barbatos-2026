@@ -1,5 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
+#include "rclcpp/qos.hpp"
+#include "barbatos_demo/msg/temperature.hpp"
 
 using namespace std::chrono_literals;
 
@@ -7,21 +8,23 @@ class Publisher : public rclcpp::Node{
 public:
 	Publisher() : Node("barbatos_publisher"),count_(0){
 		publisher_ =
-this->create_publisher<std_msgs::msg::String>("barbatos_topic",10);
+this->create_publisher<barbatos_demo::msg::Temperature>("barbatos_topic",rclcpp::QoS(rclcpp::KeepLast(10)));
 		timer_ = this->create_wall_timer(
-				2000ms,std::bind(&Publisher::timer_callback,this));
+				500ms,std::bind(&Publisher::timer_callback,this));
 	}
 private:
 	void timer_callback()
 	{
-		auto message = std_msgs::msg::String();	
-		message.data =std::string("temperature:") + std::to_string(25.0 + count_ * 0.5);
-		RCLCPP_INFO(this->get_logger(), "Publishing:'%s'", message.data.c_str());
+		auto message = barbatos_demo::msg::Temperature();	
+		message.temperature = 25.0 + count_ * 0.5f;
+		message.unit = "C";
+		message.sensor_name = "barbatos_sensor_01";
 		count_++;
+		RCLCPP_INFO(this->get_logger(), "Publishing:'temp=%.2f unit=%s sensor=%s'", message.temperature,message.unit.c_str(),message.sensor_name.c_str());
 		publisher_->publish(message);
 	}
 	
-	rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+	rclcpp::Publisher<barbatos_demo::msg::Temperature>::SharedPtr publisher_;
 	rclcpp::TimerBase::SharedPtr timer_;
 	size_t count_;
 };

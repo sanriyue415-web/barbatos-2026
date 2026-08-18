@@ -1,24 +1,25 @@
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
+#include "barbatos_demo/msg/temperature.hpp"
+#include "rclcpp/qos.hpp"
+#include <thread>
+using namespace std::chrono_literals;
 
 class Subscriber : public rclcpp::Node
 {
 	public:
 		Subscriber():Node("barbatos_subscriber")
 	{
-		subscription_=this->create_subscription<std_msgs::msg::String>(
-				"barbatos_topic",10,
-				std::bind(&Subscriber::topic_callback,this,std::placeholders::_1));
+		subscription_=this->create_subscription<barbatos_demo::msg::Temperature>(
+				"barbatos_topic",rclcpp::QoS(rclcpp::KeepLast(10)),std::bind(&Subscriber::topic_callback,this,std::placeholders::_1));
 	}
 	
 	private:
-		void topic_callback(const std_msgs::msg::String & msg)const
+		void topic_callback(const barbatos_demo::msg::Temperature & msg)const
 		{
-			std::this_thread::sleep_for(std::chrono::seconds(5));
-			RCLCPP_INFO(this->get_logger(),"I heard: '%s'",msg.data.c_str());
+			RCLCPP_INFO(this->get_logger(),"I heard: temp=%.2f unit=%s sensor=%s",msg.temperature,msg.unit.c_str(),msg.sensor_name.c_str());
 		}
 
-		rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
+		rclcpp::Subscription<barbatos_demo::msg::Temperature>::SharedPtr subscription_;
 };
 
 int main(int argc,char * argv[])

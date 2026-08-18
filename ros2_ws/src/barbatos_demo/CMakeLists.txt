@@ -10,8 +10,7 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-
+find_package(rosidl_default_generators 	REQUIRED)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -25,10 +24,20 @@ if(BUILD_TESTING)
 endif()
 
 add_executable(publisher src/publisher_member_function.cpp)
-ament_target_dependencies(publisher PUBLIC rclcpp std_msgs)
+ament_target_dependencies(publisher PUBLIC rclcpp)
+target_link_libraries(publisher PUBLIC
+	${PROJECT_NAME}__rosidl_typesupport_cpp)
 
 add_executable(subscriber src/subscriber_member_function.cpp)
-ament_target_dependencies(subscriber PUBLIC rclcpp std_msgs)
+ament_target_dependencies(subscriber PUBLIC rclcpp)
+
+target_link_libraries(subscriber PUBLIC
+${PROJECT_NAME}__rosidl_typesupport_cpp)
+
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+	"msg/Temperature.msg"
+)
 
 install(TARGETS publisher subscriber DESTINATION lib/${PROJECT_NAME})
 
