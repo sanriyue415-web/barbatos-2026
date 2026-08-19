@@ -41,4 +41,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 install(TARGETS publisher subscriber DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY launch
+	DESTINATION share/${PROJECT_NAME}
+)
+
 ament_package()

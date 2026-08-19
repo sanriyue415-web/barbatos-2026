@@ -7,10 +7,15 @@ using namespace std::chrono_literals;
 class Publisher : public rclcpp::Node{
 public:
 	Publisher() : Node("barbatos_publisher"),count_(0){
+		//声明参数：名字叫publish_rate_ms，默认值2000
+		this->declare_parameter("publish_rate_ms",2000);
 		publisher_ =
-this->create_publisher<barbatos_demo::msg::Temperature>("barbatos_topic",rclcpp::QoS(rclcpp::KeepLast(10)));
+this->create_publisher<barbatos_demo::msg::Temperature>("barbatos_topic",10);
+		//读取参数值，用它做timer间隔
+		int rate_ms =
+		this->get_parameter("publish_rate_ms").as_int();
 		timer_ = this->create_wall_timer(
-				500ms,std::bind(&Publisher::timer_callback,this));
+			std::chrono::milliseconds(rate_ms),std::bind(&Publisher::timer_callback,this));
 	}
 private:
 	void timer_callback()
